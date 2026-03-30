@@ -1,10 +1,93 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja">
 <head>
-  <title>自己紹介</title>
+  <meta charset="UTF-8">
+  <title>My Profile</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(120deg, #1e3c72, #2a5298);
+      color: white;
+      text-align: center;
+    }
+
+    .container {
+      padding: 50px;
+    }
+
+    .card {
+      background: rgba(255,255,255,0.1);
+      padding: 30px;
+      border-radius: 20px;
+      width: 300px;
+      margin: auto;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+      backdrop-filter: blur(10px);
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    img {
+      width: 100px;
+      border-radius: 50%;
+      border: 3px solid white;
+    }
+
+    h1 {
+      margin-top: 10px;
+    }
+
+    .skills {
+      margin-top: 20px;
+    }
+
+    .skill {
+      background: white;
+      color: #2a5298;
+      padding: 5px 10px;
+      margin: 5px;
+      border-radius: 10px;
+      display: inline-block;
+      font-size: 14px;
+    }
+
+    .btn {
+      margin-top: 20px;
+      display: inline-block;
+      padding: 10px 20px;
+      background: white;
+      color: #2a5298;
+      border-radius: 20px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #ddd;
+    }
+  </style>
 </head>
+
 <body>
-  <h1>しょうた</h1>
-  <p>GitHub練習中です</p>
+  <div class="container">
+    <div class="card">
+      <img src="https://via.placeholder.com/100" alt="icon">
+      <h1>しょうた</h1>
+      <p>エンジニア目指して勉強中??</p>
+
+      <div class="skills">
+        <span class="skill">Java</span>
+        <span class="skill">GitHub</span>
+        <span class="skill">HTML</span>
+      </div>
+
+      <a href="https://github.com/" class="btn">GitHubを見る</a>
+    </div>
+  </div>
 </body>
 </html>
